@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import Greeting from './Greeting.jsx'
+import Person from './Person.jsx'
 // import Syntax from './Syntax.jsx'
 // import List from './List.jsx'
 // import { favFood as FavFood, favCloths as FavCloths } from './Favorites.jsx'
@@ -12,6 +13,7 @@ const animals = ["Lion", "Cow", "Snake", "Lizard", "Cat", "Dog"];
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Greeting />
+    <Person />
     {/* <App /> */}
     {/* <Syntax />
     <FavFood />

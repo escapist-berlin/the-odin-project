@@ -7,7 +7,9 @@ function App() {
     <div className="app">
       <div className="edit-side">
         <Sidebar />
-        <PersonalDetails />
+        <div className="form-container">
+          <PersonalDetails />
+        </div>
       </div>
       <h1>Your CV</h1>
     </div>

@@ -1,0 +1,12 @@
+.dates-group {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.section-form {
+  padding: 18px;
+  background-color: white;
+  border-radius: 12px;
+}

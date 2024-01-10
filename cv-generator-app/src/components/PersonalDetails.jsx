@@ -1,5 +1,5 @@
 import InputField from "../components/InputField";
-import "../styles/PersonalDetails.css";
+import "../styles/Section.css";
 
 export default function PersonalDetails({
   /* eslint-disable react/prop-types */
@@ -11,7 +11,7 @@ export default function PersonalDetails({
   onChange,
 }) {
   return (
-    <form className="personal-details">
+    <form className="section-form">
       <h2>Personal Details</h2>
       <InputField
         type="text"

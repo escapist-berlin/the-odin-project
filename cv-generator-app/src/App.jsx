@@ -1,4 +1,5 @@
 import Sidebar from "./components/Sidebar";
+import Section from "./components/Section";
 import PersonalDetails from "./components/PersonalDetails";
 import EducationForm from "./components/EducationForm";
 import ExperienceForm from "./components/ExperienceForm";
@@ -10,6 +11,7 @@ function App() {
       <div className="edit-side">
         <Sidebar />
         <div className="form-container">
+          <Section />
           <PersonalDetails />
           <EducationForm />
           <ExperienceForm />

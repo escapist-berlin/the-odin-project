@@ -1,16 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faNewspaper } from '@fortawesome/free-solid-svg-icons'
-import { faSliders } from '@fortawesome/free-solid-svg-icons'
 
 export default function Sidebar() {
   return (
     <nav>
       <button>
-        <FontAwesomeIcon icon={faNewspaper} />
+        <FontAwesomeIcon icon="fa-solid fa-newspaper" />
         Content
       </button>
       <button>
-        <FontAwesomeIcon icon={faSliders} />
+        <FontAwesomeIcon icon="fa-solid fa-sliders" />
         Customize
       </button>
     </nav>

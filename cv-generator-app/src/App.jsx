@@ -1,9 +1,6 @@
 import { useState } from "react";
 import Sidebar from "./components/Sidebar";
 import Section from "./components/Section";
-import PersonalDetails from "./components/PersonalDetails";
-import EducationForm from "./components/EducationForm";
-import ExperienceForm from "./components/ExperienceForm";
 import './styles/App.css'
 
 function App() {
@@ -33,9 +30,6 @@ function App() {
             sectionName="Professional Experience"
             iconName="fa-solid fa-briefcase"
           />
-          <PersonalDetails />
-          <EducationForm />
-          <ExperienceForm />
         </div>
       </div>
       <h1>Your CV</h1>

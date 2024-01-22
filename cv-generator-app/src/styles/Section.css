@@ -11,7 +11,7 @@
   border-radius: 12px;
 }
 
-.expand-section {
+.expand-button {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,11 +25,16 @@
   position: relative;
 }
 
-.expand-section:hover {
+.expand-button:hover {
   background-color: #f0f0f0;
 }
 
-.expand-section-header {
+.expand-section {
+  background-color: white;
+  border-radius: 12px;
+}
+
+.expand-button-header {
   display: flex;
   align-items: center;
   gap: 12px;

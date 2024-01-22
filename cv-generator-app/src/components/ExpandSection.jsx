@@ -10,10 +10,10 @@ export default function ExpandSection({
 }) {
   return (
     <button
-      className="expand-section"
+      className="expand-button"
       onClick={() => setOpen(isOpen ? "" : sectionName)}
       >
-      <h2 className="expand-section-header">
+      <h2 className="expand-button-header">
         <FontAwesomeIcon icon={iconName} />
         {sectionName}
       </h2>

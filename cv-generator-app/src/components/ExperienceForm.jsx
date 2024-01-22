@@ -13,7 +13,6 @@ export default function ExperienceForm({
 }) {
   return (
     <form className="section-form">
-      <h2>Edit Professional Experience</h2>
       <InputField
         type="text"
         id="employer"

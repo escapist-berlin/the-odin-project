@@ -12,7 +12,6 @@ export default function EducationForm({
 }) {
   return (
     <form className="section-form">
-      <h2>Edit Education</h2>
       <InputField
         type="text"
         id="degree"

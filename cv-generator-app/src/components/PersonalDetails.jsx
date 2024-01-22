@@ -12,7 +12,6 @@ export default function PersonalDetails({
 }) {
   return (
     <form className="section-form">
-      <h2>Personal Details</h2>
       <InputField
         type="text"
         id="full-name"

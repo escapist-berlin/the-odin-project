@@ -1,4 +1,5 @@
 import InputField from "./InputField";
+import FormButtons from "./../components/FormButtons";
 import "../styles/Section.css";
 
 export default function ExperienceForm({
@@ -69,6 +70,7 @@ export default function ExperienceForm({
         onChange={onChange}
         data-key="description"
       />
+      <FormButtons />
     </form>
   )
 }

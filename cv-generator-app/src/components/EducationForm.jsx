@@ -1,4 +1,5 @@
 import InputField from "./InputField";
+import FormButtons from "./../components/FormButtons";
 import "../styles/Section.css";
 
 export default function EducationForm({
@@ -59,6 +60,7 @@ export default function EducationForm({
           data-key="endDate"
         />
       </div>
+      <FormButtons />
     </form>
 
   )

@@ -11,6 +11,7 @@ import {
   faChevronUp,
   faAddressCard,
   faBriefcase,
+  faTrash,
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(
@@ -20,6 +21,7 @@ library.add(
   faChevronUp,
   faAddressCard,
   faBriefcase,
+  faTrash,
 )
 
 ReactDOM.createRoot(document.getElementById('root')).render(

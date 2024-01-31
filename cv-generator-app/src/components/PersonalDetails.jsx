@@ -4,11 +4,7 @@ import "../styles/Section.css";
 
 export default function PersonalDetails({
   /* eslint-disable react/prop-types */
-  fullName,
-  jobTitle,
-  email,
-  phoneNumber,
-  address,
+  data,
   onChange,
 }) {
   return (
@@ -18,7 +14,7 @@ export default function PersonalDetails({
         id="full-name"
         labelText="Full name"
         placeholder="First and last name"
-        value={fullName}
+        value={data.fullName}
         onChange={onChange}
         data-key="fullName"
       />
@@ -27,7 +23,7 @@ export default function PersonalDetails({
         id="job-title"
         labelText="Job title"
         placeholder="Enter job title"
-        value={jobTitle}
+        value={data.jobTitle}
         onChange={onChange}
         data-key="jobTitle"
       />
@@ -36,7 +32,7 @@ export default function PersonalDetails({
         id="email"
         labelText="Email"
         placeholder="Enter email"
-        value={email}
+        value={data.email}
         onChange={onChange}
         data-key="email"
       />
@@ -45,16 +41,16 @@ export default function PersonalDetails({
         id="phone-number"
         labelText="Phone"
         placeholder="Enter phone"
-        value={phoneNumber}
+        value={data.phoneNumber}
         onChange={onChange}
-        data-key="email"
+        data-key="phoneNumber"
       />
       <InputField
         type="text"
         id="address"
         labelText="Address"
         placeholder="City, country"
-        value={address}
+        value={data.address}
         onChange={onChange}
         data-key="address"
       />

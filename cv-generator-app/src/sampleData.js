@@ -1,8 +1,9 @@
 import uniqid from "uniqid";
 
 const sampleData = {
-  personalInfo: {
+  personal: {
     fullName: "John Doe",
+    jobTitle: "Software Engineer",
     email: "john.doe@example.com",
     phoneNumber: "+1 123 456 7890",
     address: "New York, USA",

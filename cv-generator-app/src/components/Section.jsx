@@ -4,7 +4,9 @@ import "../styles/Section.css";
 
 export default function Section({
   /* eslint-disable react/prop-types */
+  data,
   isOpen,
+  onChange,
   setOpen,
   sectionName,
   iconName,
@@ -18,7 +20,9 @@ export default function Section({
         iconName={iconName}
       />
       <DisplayItems
+        data={data}
         sectionName={sectionName}
+        onChange={onChange}
       />
     </div>
   )

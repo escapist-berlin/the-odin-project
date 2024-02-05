@@ -19,11 +19,13 @@ export default function Section({
         sectionName={sectionName}
         iconName={iconName}
       />
-      <DisplayItems
-        data={data}
-        sectionName={sectionName}
-        onChange={onChange}
-      />
+      {isOpen && (
+        <DisplayItems
+          data={data}
+          sectionName={sectionName}
+          onChange={onChange}
+        />
+      )}
     </div>
   )
 }

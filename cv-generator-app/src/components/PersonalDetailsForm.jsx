@@ -2,7 +2,7 @@ import InputField from "../components/InputField";
 import FormButtons from "./../components/FormButtons";
 import "../styles/Section.css";
 
-export default function PersonalDetails({
+export default function PersonalDetailsForm({
   /* eslint-disable react/prop-types */
   data,
   onChange,

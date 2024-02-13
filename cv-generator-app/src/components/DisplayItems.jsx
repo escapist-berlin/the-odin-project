@@ -1,4 +1,4 @@
-import PersonalDetails from "./../components/PersonalDetails";
+import PersonalDetailsForm from "./../components/PersonalDetailsForm";
 import EducationForm from "./../components/EducationForm";
 import ExperienceForm from "./../components/ExperienceForm";
 
@@ -10,7 +10,7 @@ export default function DisplayItems({
 }) {
   return (
     <div>
-      {sectionName === "Personal Details" && <PersonalDetails data={data} onChange={onChange} />}
+      {sectionName === "Personal Details" && <PersonalDetailsForm data={data} onChange={onChange} />}
       {sectionName === "Education" && <EducationForm data={data} onChange={onChange} />}
       {sectionName === "Professional Experience" && <ExperienceForm data={data} onChange={onChange} />}
     </div>

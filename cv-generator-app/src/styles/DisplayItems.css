@@ -1,0 +1,26 @@
+.personal-display-container {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 24px; */
+  padding-top: 0;
+  padding-bottom: 24px;
+  padding-left: 60px;
+  padding-right: 24px;
+}
+
+.personal-display-name-title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.personal-display-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.edit-button {
+
+}

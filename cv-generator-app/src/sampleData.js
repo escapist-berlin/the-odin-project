@@ -7,6 +7,7 @@ const sampleData = {
     email: "john.doe@example.com",
     phoneNumber: "+1 123 456 7890",
     address: "New York, USA",
+    isCollapsed: true,
   },
   educations: [
     {

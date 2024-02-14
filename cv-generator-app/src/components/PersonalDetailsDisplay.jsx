@@ -4,6 +4,7 @@ import "../styles/DisplayItems.css";
 export default function PersonalDetailsDisplay({
   /* eslint-disable react/prop-types */
   data,
+  onEdit,
 }) {
   return (
     <div className="personal-display-container">
@@ -19,7 +20,7 @@ export default function PersonalDetailsDisplay({
         </div>
       </div>
       <div className="edit-button">
-        <button><FontAwesomeIcon icon="fa-solid fa-pen-to-square" /></button>
+        <button onClick={onEdit}><FontAwesomeIcon icon="fa-solid fa-pen-to-square" /></button>
       </div>
     </div>
   )

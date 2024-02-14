@@ -1,3 +1,4 @@
+import { useState } from "react";
 import PersonalDetailsDisplay from "./../components/PersonalDetailsDisplay";
 import PersonalDetailsForm from "./../components/PersonalDetailsForm";
 import EducationForm from "./../components/EducationForm";
@@ -9,10 +10,23 @@ export default function DisplayItems({
   sectionName,
   onChange,
 }) {
+  const [isCollapsed, setIsCollapsed] = useState(true);
+
+  const handleEditClick = () => {
+    setIsCollapsed(false);
+  };
+
   return (
     <div>
-      {/* {sectionName === "Personal Details" && <PersonalDetailsForm data={data} onChange={onChange} />} */}
-      {sectionName === "Personal Details" && <PersonalDetailsDisplay data={data} />}
+      {sectionName === "Personal Details" && (
+        <>
+          {isCollapsed ? (
+            <PersonalDetailsDisplay data={data} onEdit={handleEditClick} />
+          ) : (
+            <PersonalDetailsForm data={data} onChange={onChange} />
+          )}
+        </>
+      )}
       {sectionName === "Education" && <EducationForm data={data} onChange={onChange} />}
       {sectionName === "Professional Experience" && <ExperienceForm data={data} onChange={onChange} />}
     </div>

@@ -24,3 +24,8 @@
 .edit-button {
 
 }
+
+.section-display-container {
+  display: flex;
+  /* justify-content: space-between; */
+}

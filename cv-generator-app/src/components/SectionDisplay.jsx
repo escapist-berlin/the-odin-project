@@ -8,14 +8,12 @@ export default function SectionDisplay({
 }) {
   return (
     <div className="section-display-container">
-      <div>
-        {data.map((item) => (
-          <div key={item.id}>
-            <p>{item.degree || item.positionTitle}, {item.schoolName || item.companyName}</p>
-            <p>{item.startDate} - {item.endDate} | {item.location}</p>
-          </div>
-        ))}
-      </div>
+      {data.map((item) => (
+        <div className="section-display-item" key={item.id}>
+          <p>{item.degree || item.positionTitle}, <i>{item.schoolName || item.companyName}</i></p>
+          <small>{item.startDate} - {item.endDate} | {item.location}</small>
+        </div>
+      ))}
     </div>
   )
 }

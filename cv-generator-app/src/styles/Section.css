@@ -22,6 +22,11 @@
   border-radius: 12px;
   cursor: pointer;
   position: relative;
+  transition: color 0.2s ease;
+}
+
+.expand-button:hover {
+  color: #666666;
 }
 
 .expand-section {
@@ -34,11 +39,6 @@
   align-items: center;
   gap: 12px;
   margin: 0;
-  transition: color 0.2s ease;
-}
-
-.expand-button-header:hover {
-  color: #666666;
 }
 
 .rotate-up {

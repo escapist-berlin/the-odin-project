@@ -37,4 +37,10 @@
 .section-display-item {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.section-display-item:hover {
+  color: #666666;
 }

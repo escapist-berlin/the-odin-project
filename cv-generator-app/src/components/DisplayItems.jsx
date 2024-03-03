@@ -12,9 +12,13 @@ export default function DisplayItems({
   onChange,
 }) {
   const [isCollapsed, setIsCollapsed] = useState(true);
+  const [selectedItem, setSelectedItem] = useState(null);
 
-  const handleEditClick = () => {
+  const handleEditClick = (itemData) => {
     setIsCollapsed(false);
+    if (itemData) {
+      setSelectedItem(itemData);
+    }
   };
 
   return (
@@ -33,7 +37,7 @@ export default function DisplayItems({
           {isCollapsed ? (
             <SectionDisplay data={data} onEdit={handleEditClick} />
           ) : (
-            <EducationForm data={data} onChange={onChange} />
+            <EducationForm data={selectedItem} onChange={onChange} />
           )}
         </>
       )}
@@ -42,12 +46,10 @@ export default function DisplayItems({
           {isCollapsed ? (
             <SectionDisplay data={data} onEdit={handleEditClick} />
           ) : (
-            <ExperienceForm data={data} onChange={onChange} />
+            <ExperienceForm data={selectedItem} onChange={onChange} />
           )}
         </>
       )}
-      {/* {sectionName === "Education" && <EducationForm data={data} onChange={onChange} />}
-      {sectionName === "Professional Experience" && <ExperienceForm data={data} onChange={onChange} />} */}
     </div>
   )
 }

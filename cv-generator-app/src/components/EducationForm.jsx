@@ -4,11 +4,7 @@ import "../styles/Section.css";
 
 export default function EducationForm({
   /* eslint-disable react/prop-types */
-  degree,
-  schoolName,
-  location,
-  startDate,
-  endDate,
+  data,
   onChange,
 }) {
   return (
@@ -18,7 +14,7 @@ export default function EducationForm({
         id="degree"
         labelText="Degree"
         placeholder="Enter degree / Field of study"
-        value={degree}
+        value={data.degree}
         onChange={onChange}
         data-key="degree"
       />
@@ -27,7 +23,7 @@ export default function EducationForm({
         id="school-name"
         labelText="School"
         placeholder="Enter school / university"
-        value={schoolName}
+        value={data.schoolName}
         onChange={onChange}
         data-key="schoolName"
       />
@@ -36,7 +32,7 @@ export default function EducationForm({
         id="location"
         labelText="Location"
         placeholder="Enter location"
-        value={location}
+        value={data.location}
         onChange={onChange}
         data-key="location"
       />
@@ -46,7 +42,7 @@ export default function EducationForm({
           id="start-date" // or just 'date'?
           labelText="Start Date"
           placeholder="Enter start date"
-          value={startDate}
+          value={data.startDate}
           onChange={onChange}
           data-key="startDate"
         />
@@ -55,7 +51,7 @@ export default function EducationForm({
           id="end-date" // or just 'date'?
           labelText="End Date"
           placeholder="Enter end date"
-          value={endDate}
+          value={data.endDate}
           onChange={onChange}
           data-key="endDate"
         />

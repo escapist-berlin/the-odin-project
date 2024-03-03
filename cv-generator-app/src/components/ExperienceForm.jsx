@@ -4,40 +4,41 @@ import "../styles/Section.css";
 
 export default function ExperienceForm({
   /* eslint-disable react/prop-types */
-  employer,
-  position,
-  location,
-  startDate,
-  endDate,
-  description,
+  // employer,
+  // position,
+  // location,
+  // startDate,
+  // endDate,
+  // description,
+  data,
   onChange,
 }) {
   return (
     <form className="section-form">
       <InputField
         type="text"
-        id="employer"
+        id="company-name"
         labelText="Employer"
         placeholder="Enter employer"
-        value={employer}
+        value={data.companyName}
         onChange={onChange}
-        data-key="employer"
+        data-key="companyName"
       />
       <InputField
         type="text"
-        id="position"
+        id="position-title"
         labelText="Position"
         placeholder="Enter position"
-        value={position}
+        value={data.positionTitle}
         onChange={onChange}
-        data-key="position"
+        data-key="positionTitle"
       />
       <InputField
         type="text"
         id="location"
         labelText="Location"
         placeholder="Enter location"
-        value={location}
+        value={data.location}
         onChange={onChange}
         data-key="location"
       />
@@ -47,7 +48,7 @@ export default function ExperienceForm({
           id="start-date" // or just 'date'?
           labelText="Start Date"
           placeholder="Enter start date"
-          value={startDate}
+          value={data.startDate}
           onChange={onChange}
           data-key="startDate"
         />
@@ -56,7 +57,7 @@ export default function ExperienceForm({
           id="end-date" // or just 'date'?
           labelText="End Date"
           placeholder="Enter end date"
-          value={endDate}
+          value={data.endDate}
           onChange={onChange}
           data-key="endDate"
         />
@@ -66,7 +67,7 @@ export default function ExperienceForm({
         id="description"
         labelText="Description"
         placeholder="Describe your role and achievements"
-        value={description}
+        value={data.description}
         onChange={onChange}
         data-key="description"
       />

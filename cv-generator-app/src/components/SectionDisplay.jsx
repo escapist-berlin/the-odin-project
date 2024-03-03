@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "../styles/DisplayItems.css";
 
 export default function SectionDisplay({
@@ -9,7 +8,11 @@ export default function SectionDisplay({
   return (
     <div className="section-display-container">
       {data.map((item) => (
-        <div className="section-display-item" key={item.id}>
+        <div
+          className="section-display-item"
+          key={item.id}
+          onClick={() => onEdit(item)}
+          >
           <p>{item.degree || item.positionTitle}, <i>{item.schoolName || item.companyName}</i></p>
           <small>{item.startDate} - {item.endDate} | {item.location}</small>
         </div>

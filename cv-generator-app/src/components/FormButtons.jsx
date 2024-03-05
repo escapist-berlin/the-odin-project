@@ -16,10 +16,10 @@ export default function FormButtons({
         )}
       </div>
       <div className="main-form-buttons">
-        <button>
+        <button className="main-form-cancel">
           Cancel
         </button>
-        <button>
+        <button className="main-form-save">
           Save
         </button>
       </div>

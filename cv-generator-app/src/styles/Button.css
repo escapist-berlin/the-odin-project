@@ -22,4 +22,18 @@
   display: flex;
   align-items: center;
   gap: 6px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.main-form-cancel,
+.main-form-save {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.main-form-cancel:hover,
+.main-form-save:hover,
+.form-delete:hover {
+  color: #666666;
 }

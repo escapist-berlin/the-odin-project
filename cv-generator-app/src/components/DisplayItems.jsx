@@ -21,6 +21,12 @@ export default function DisplayItems({
     }
   };
 
+  const handleCancelClick = (e) => {
+    e.preventDefault();
+    setIsCollapsed(true);
+    setSelectedItem(null);
+  }
+
   return (
     <div>
       {sectionName === "Personal Details" && (
@@ -28,7 +34,7 @@ export default function DisplayItems({
           {isCollapsed ? (
             <PersonalDetailsDisplay data={data} onEdit={handleEditClick} />
           ) : (
-            <PersonalDetailsForm data={data} onChange={onChange} />
+            <PersonalDetailsForm data={data} onChange={onChange} onCancel={handleCancelClick} />
           )}
         </>
       )}
@@ -37,7 +43,7 @@ export default function DisplayItems({
           {isCollapsed ? (
             <SectionDisplay data={data} onEdit={handleEditClick} />
           ) : (
-            <EducationForm data={selectedItem} onChange={onChange} />
+            <EducationForm data={selectedItem} onChange={onChange} onCancel={handleCancelClick} />
           )}
         </>
       )}
@@ -46,7 +52,7 @@ export default function DisplayItems({
           {isCollapsed ? (
             <SectionDisplay data={data} onEdit={handleEditClick} />
           ) : (
-            <ExperienceForm data={selectedItem} onChange={onChange} />
+            <ExperienceForm data={selectedItem} onChange={onChange} onCancel={handleCancelClick} />
           )}
         </>
       )}

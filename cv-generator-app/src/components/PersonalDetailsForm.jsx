@@ -6,6 +6,7 @@ export default function PersonalDetailsForm({
   /* eslint-disable react/prop-types */
   data,
   onChange,
+  onCancel,
 }) {
   return (
     <form className="section-form">
@@ -54,7 +55,7 @@ export default function PersonalDetailsForm({
         onChange={onChange}
         data-key="address"
       />
-      <FormButtons hideDeleteButton={true} />
+      <FormButtons hideDeleteButton={true} onCancel={onCancel} />
     </form>
   )
 }

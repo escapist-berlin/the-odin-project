@@ -3,7 +3,8 @@ import "../styles/Button.css";
 
 export default function FormButtons({
   /* eslint-disable react/prop-types */
-  hideDeleteButton = false
+  hideDeleteButton = false,
+  onCancel,
 }) {
   return (
     <div className="form-buttons">
@@ -16,7 +17,7 @@ export default function FormButtons({
         )}
       </div>
       <div className="main-form-buttons">
-        <button className="main-form-cancel">
+        <button className="main-form-cancel" onClick={onCancel}>
           Cancel
         </button>
         <button className="main-form-save">

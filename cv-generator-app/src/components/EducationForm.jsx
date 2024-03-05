@@ -6,6 +6,7 @@ export default function EducationForm({
   /* eslint-disable react/prop-types */
   data,
   onChange,
+  onCancel,
 }) {
   return (
     <form className="section-form">
@@ -56,7 +57,7 @@ export default function EducationForm({
           data-key="endDate"
         />
       </div>
-      <FormButtons />
+      <FormButtons onCancel={onCancel} />
     </form>
 
   )

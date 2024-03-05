@@ -12,6 +12,7 @@ export default function ExperienceForm({
   // description,
   data,
   onChange,
+  onCancel,
 }) {
   return (
     <form className="section-form">
@@ -71,7 +72,7 @@ export default function ExperienceForm({
         onChange={onChange}
         data-key="description"
       />
-      <FormButtons />
+      <FormButtons onCancel={onCancel} />
     </form>
   )
 }

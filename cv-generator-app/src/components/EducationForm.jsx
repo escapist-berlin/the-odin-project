@@ -9,7 +9,7 @@ export default function EducationForm({
   onCancel,
 }) {
   return (
-    <form className="section-form">
+    <form className="section-form" data-id={data.id}>
       <InputField
         type="text"
         id="degree"

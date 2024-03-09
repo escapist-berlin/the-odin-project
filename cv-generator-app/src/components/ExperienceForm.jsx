@@ -4,18 +4,12 @@ import "../styles/Section.css";
 
 export default function ExperienceForm({
   /* eslint-disable react/prop-types */
-  // employer,
-  // position,
-  // location,
-  // startDate,
-  // endDate,
-  // description,
   data,
   onChange,
   onCancel,
 }) {
   return (
-    <form className="section-form">
+    <form className="section-form" data-id={data.id}>
       <InputField
         type="text"
         id="company-name"

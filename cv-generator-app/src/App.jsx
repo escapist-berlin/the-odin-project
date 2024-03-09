@@ -10,16 +10,18 @@ function App() {
   const setOpen = (sectionName) => setSectionOpen(sectionName);
 
   function handleSectionChange(e, sectionName) {
-    // e.target.dataset // key => "fullName"
-    // e.target.value // value => "John Doe"
     const { key } = e.target.dataset;
     const inputValue = e.target.value;
-    // const form = e.target.closest(".section-form");
 
     const updatedSections = { ...sections };
 
-    updatedSections[sectionName][key] = inputValue;
-
+    if (sectionName === "personal") {
+      updatedSections[sectionName][key] = inputValue;
+    } else {
+      const { id } = e.target.closest('.section-form').dataset;
+      const index = updatedSections[sectionName].findIndex(item => item.id === id);
+      updatedSections[sectionName][index][key] = inputValue;
+    }
     setSections(updatedSections);
   }
 
